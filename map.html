@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c40f1ebc905a4b0f8a614f8536ac712a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <link rel="stylesheet" href="https://rawcdn.githack.com/marslan390/BeautifyMarker/master/leaflet-beautify-marker-icon.css"/>
+    <script src="https://rawcdn.githack.com/marslan390/BeautifyMarker/master/leaflet-beautify-marker-icon.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c40f1ebc905a4b0f8a614f8536ac712a" ></div>
+        
+</body>
+<script>    
+    
+            var map_c40f1ebc905a4b0f8a614f8536ac712a = L.map(
+                "map_c40f1ebc905a4b0f8a614f8536ac712a",
+                {
+                    center: [-17.370959300000003, -66.13233570762681],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1fb3410ffeeb4739816bfbff7b780797 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c40f1ebc905a4b0f8a614f8536ac712a);
+        
+    
+            var marker_3e6db9232e3a4c99b87bcc93c84606fb = L.marker(
+                [-17.370959300000003, -66.13233570762681],
+                {}
+            ).addTo(map_c40f1ebc905a4b0f8a614f8536ac712a);
+        
+    
+            var beautify_icon_059df4805f6946d1bd82753eeca818ec = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "transparent", "borderWidth": 0.5, "innerIconStyle": "font-size:20px;margin:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "#A12830"}
+            )
+            marker_3e6db9232e3a4c99b87bcc93c84606fb.setIcon(beautify_icon_059df4805f6946d1bd82753eeca818ec);
+        
+    
+        var popup_96b9ef532fac48018d8e021250ab6a8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a3fcda566a74b7da41c4de2d09be88b = $(`<div id="html_7a3fcda566a74b7da41c4de2d09be88b" style="width: 100.0%; height: 100.0%;">UE Cochabamba Cooperative School - Calvert, Calle Vaticano, Mesadilla, Distrito 1, Tunari, Cochabamba, Kanata, Cercado, Cochabamba, 538, Bolivia</div>`)[0];
+            popup_96b9ef532fac48018d8e021250ab6a8a.setContent(html_7a3fcda566a74b7da41c4de2d09be88b);
+        
+
+        marker_3e6db9232e3a4c99b87bcc93c84606fb.bindPopup(popup_96b9ef532fac48018d8e021250ab6a8a)
+        ;
+
+        
+    
+    
+            var poly_line_af57458f51ca41458836b197e8260d08 = L.polyline(
+                [[-17.370959300000003, -66.13233570762681]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c40f1ebc905a4b0f8a614f8536ac712a);
+        
+</script>
