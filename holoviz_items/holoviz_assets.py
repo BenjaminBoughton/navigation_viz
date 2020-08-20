@@ -23,8 +23,10 @@ button_dict['map_poi'] = pn.widgets.Button(name = 'Map Points of Interest', butt
 
 #Text input
 text_input_dict = {}
-text_input_dict['address_input'] = pn.widgets.TextInput(name = 'Address: ', value = '', width_policy='max')
-text_input_dict['address_query_display'] = pn.widgets.TextInput(name = 'Address Found: ', value = '', height = 100, width_policy='max', disabled=True)
+text_input_dict['address_input'] = pn.widgets.TextInput(name = 'Address: ', value = '', sizing_mode = 'stretch_width')
+
+text_input_dict['address_query_display'] = pn.widgets.TextInput(name = 'Address Found: ', value = '', height = 100, sizing_mode = 'stretch_width', disabled=True, aspect_ratio = 'auto')
+
 text_input_dict['all_addresses_display'] = pn.widgets.TextInput(name = 'Current Points of Interest: ', value = '', height = 100, width_policy='max', disabled=True)
 
 #Strings
